@@ -1,234 +1,308 @@
 <!DOCTYPE html>
-<html>
+    <html lang="en">
     <head>
-        <title>Colmar Academy</title>
-        <link rel="stylesheet" type="text/css" href="resources/style.css"/>
-        <link rel="shortcut icon" type="image/svg" href="./resources/capstone_colmar_assets/images/ic-logo.svg"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Your Name | Frontend Developer</title>
     </head>
     <body>
-    <span class="desktop">
-        <header>
-            <div class="logo">
-                <img src="./resources/capstone_colmar_assets/images/ic-logo.svg">
-                <div class="logo_colmar">COLMAR</div>
-                <div class="logo_academy">ACADEMY</div>
-            </div>
-            <div class="menu">
-                <ul class="nav">
-                    <li>On campus</li>
-                    <li>Online</li>
-                    <li>For companies</li>
-                    <li>Sign in</li>
-                </ul>
-            </div>
-        </header>
-        <main>
-            <div class="start">
-                <img src="./resources/capstone_colmar_assets/images/banner.jpg">
-                <div class="start_text">
-                    <h1>Learn something new everyday</h1>
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                    <button type="button"><h3>Start here</h3></button>
-                </div>
-            </div>
-            <div class="practicing">
-                <div class="p_left">
-                    <img src="./resources/capstone_colmar_assets/images/information-main.jpg">
-                    <h1>It doesn't hurt to keep practicing</h1>
-                    <p>"Latin text"</p>
-                    <p>Emanuel, Sr Strategist at Hiring.com</p>
-                </div>
-                <div class="p_right">
-                    <div class="orientation">
-                        <img src="./resources/capstone_colmar_assets/images/information-orientation.jpg">
-                        <div class="orientation_date">
-                            <h2>Orientation Date</h2>
-                            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                            <p class="read_more">Read more</p>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <!-- Insert your image, according to the example size of the portfolio -->
+                            <img src="assets/img/headshot.png" alt="">
                         </div>
                     </div>
-                    <div class="campus">
-                        <img src="./resources/capstone_colmar_assets/images/information-campus.jpg">
-                        <div class="our_campus">
-                            <h2>Our campus</h2>
-                            <p>Find which campus is close by you</p>
-                            <p class="read_more">Read more</p>
-                        </div>
-                    </div>
-                    <div class="guest">
-                        <img src="./resources/capstone_colmar_assets/images/information-guest-lecture.jpg">
-                        <div class="guest_lecture">
-                            <h2>Our guest lecture</h2>
-                            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-                            <p class="read_more">Read more</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="learning">
-                <h1>Start learning</h1>
-                <ul class="start_learning">
-                    <li class="software_engineering">
-                        <img src="resources/capstone_colmar_assets/images/course-software.jpg">
-                        <h3>Software engineering</h3>
-                        <p>COURSES</p>
-                        <p>Web Development, Mobile Development, iOT, APIs</p>
-                    </li>
-                    <li class="computer_art">
-                        <img src="resources/capstone_colmar_assets/images/course-computer-art.jpg">
-                        <h3>Computer art</h3>
-                        <p>COURSES</p>
-                        <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
-                    </li>
-                    <li class="design">
-                        <img src="resources/capstone_colmar_assets/images/course-design.jpg">
-                        <h3>Design</h3>
-                        <p>COURSES</p>
-                        <p>User Experience Design, User Research, Visual Design</p>
-                    </li>
-                </ul>
-                <ul class="start_learning">
-                    <li class="data">
-                        <img src="resources/capstone_colmar_assets/images/course-data.jpg">
-                        <h3>Data</h3>
-                        <p>COURSES</p>
-                        <p>Data Science, Big Data, SQL, Data Visualization</p>
-                    </li>
-                    <li class="business">
-                        <img src="resources/capstone_colmar_assets/images/course-business.jpg">
-                        <h3>Business</h3>
-                        <p>COURSES</p>
-                        <p>Product Development, Business Development, Startup</p>
-                    </li>
-                    <li class="marketing">
-                        <img src="resources/capstone_colmar_assets/images/course-marketing.jpg">
-                        <h3>Marketing</h3>
-                        <p>COURSES</p>
-                        <p>Analytics, Content Marketing, Mobile Marketing</p>
-                    </li>
-                </ul>
-            </div>
-                <div class="thesis">
-                    <h1>Thesis exhibit</h1>
-                    <div class="thesis_exhibit">
-                        <div class="t_left">
-                            <video autoplay muted loop><source src="./resources/capstone_colmar_assets/videos/thesis.mp4" type="video/mp4"></video>
-                            <h3>Reimagine urban</h3>                            <p>"Latin text"</p>
-                        </div>
-                        <div class="t_right">
-                            <ul class="t_right_list">
-                                <li class="fisma_box">
-                                    <img src="resources/capstone_colmar_assets/images/thesis-fisma.jpg">
-                                    <div class="fisma">
-                                        <h2>Fisma: Design and Prototype</h2>
-                                        <p>Designer showcase of new prototype product</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="resources/capstone_colmar_assets/images/thesis-now-and-then.jpg">
-                                    <div class="then_now">
-                                        <h2>Now and then</h2>
-                                        <p>Research study about New York</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-        </main>
-        <footer>
-            <div class="copyright">&copy; 2016 Colmar Academy. All rights reserved</div>
-            <ul class="t_p">
-                <li>Terms</li>
-                <li>Privacy</li>
-            </ul>
-        </footer>
-        </span>
-        <span class="mobile">
-            <header>
-                <div class="menu">
-                    <img src="resources/capstone_colmar_assets/images/ic-logo.svg">
-                    <img src="resources/capstone_colmar_assets/images/ic-on-campus.svg">
-                    <img src="resources/capstone_colmar_assets/images/ic-online.svg">
-                    <img src="resources/capstone_colmar_assets/images/ic-login.svg">
-                </div>
-            </header>
-            <main>
-                <div class="start">
-                    <img src="./resources/capstone_colmar_assets/images/banner.jpg">
-                    <div class="start_text">
-                        <h1>Learn something new everyday</h1>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                        <button type="button"><h3>Start here</h3></button>
-                    </div>
-                </div>
-                <div class="practicing">
-                    <div class="p_left">
-                        <img src="./resources/capstone_colmar_assets/images/information-main.jpg">
-                        <h1>It doesn't hurt to keep practicing</h1>
-                        <p>"Latin text"</p>
-                        <p>Emanuel, Sr Strategist at Hiring.com</p>
-                    </div>
-                    <div class="p_right">
-                        <div class="orientation">
-                            <img src="./resources/capstone_colmar_assets/images/information-orientation.jpg">
-                            <div class="orientation_date">
-                                <h2>Orientation Date</h2>
-                                <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                                <p class="read_more">Read more</p>
-                            </div>
-                        </div>
-                        <div class="campus">
-                            <img src="./resources/capstone_colmar_assets/images/information-campus.jpg">
-                            <div class="our_campus">
-                                <h2>Our campus</h2>
-                                <p>Find which campus is close by you</p>
-                                <p class="read_more">Read more</p>
-                            </div>
-                        </div>
-                        <div class="guest">
-                            <img src="./resources/capstone_colmar_assets/images/information-guest-lecture.jpg">
-                            <div class="guest_lecture">
-                                <h2>Our guest lecture</h2>
-                                <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-                                <p class="read_more">Read more</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="learning">
-                    <h1>Start learning</h1>
-                    <ul class="start_learning">
-                        <li class="software_engineering">
-                            <h3>Software engineering</h3>
-                        </li>
-                        <li class="computer_art">
-                            <h3>Computer art</h3>
-                        </li>
-                        <li class="design">
-                            <h3>Design</h3>
-                        </li>
-                        <li class="data">
-                            <h3>Data</h3>
-                        </li>
-                        <li class="business">
-                            <h3>Business</h3>
-                        </li>
-                        <li class="marketing">
-                            <h3>Marketing</h3>
-                        </li>
+
+                    <h2 class="profile__name">Your Name</h2>
+                    <h3 class="profile__profession">Frontend Web Developer</h3>
+
+                    <ul class="profile__social">
+                        <a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="profile__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://github.com/" target="_blank" class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
                     </ul>
                 </div>
-                    <div class="thesis">
-                        <h1>Thesis exhibit</h1>
-                        <div class="thesis_exhibit">
-                            <video autoplay muted loop><source src="./resources/capstone_colmar_assets/videos/thesis.mp4" type="video/mp4"></video>
+
+                <div class="profile__buttons">
+                    <!-- Insert your CV -->
+                    <a download="" href="assets/pdf/your.pdf" class="button">
+                        Download CV <i class="ri-download-line"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                        Projects
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Skills
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img src="assets/img/project1.jpeg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Website</span>
+                                    <h3 class="projects__title">Redesign Client Website | Pizza Restaurant </h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/project1.jpeg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Website</span>
+                                    <h3 class="projects__title">Responsive Travel Website</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/project1.jpeg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Website</span>
+                                    <h3 class="projects__title">Redesign of Academy Website</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                          <article class="projects__card">
+                            <img src="assets/img/project1.jpeg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Branding</span>
+                                    <h3 class="projects__title">Website Projects + Development</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/project1.jpeg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Projects</span>
+                                    <h3 class="projects__title">Mastery of CSS</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/project1.jpeg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Projects</span>
+                                    <h3 class="projects__title">Mastery of Javascript</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">Development</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">HTML5</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">CSS + SASS</h3>
+                                            <span class="skills__level">Advanced</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">JavaScript</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">React</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Command Line</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Git + GitHub</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">Design</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">UX/UI</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Bootstrap</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Static Landing Pages</h3>
+                                            <span class="skills__level">Advanced</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">WordPress</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                     <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Figma</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Use-Case Analysis + Client Delivery</h3>
+                                            <span class="skills__level">Advanced</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-            </main>
-            <footer>
-                &copy; 2016 Colmar Academy. All rights reserved
-            </footer> 
-        </span>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; Your Name. All Rights Reserved
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
